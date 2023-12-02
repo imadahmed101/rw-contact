@@ -13,6 +13,7 @@ const MainLayout = ({ children }: MainLayoutProps) => {
     <nav className="flex flex-row gap-2">
     <Link to={routes.home()}>Home</Link>
     <Link to={routes.contact()}>Contact</Link>
+    <Link to={routes.dashboard()}>Dashboard</Link>
     </nav>
   </header>
   <main>
