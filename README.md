@@ -5,3 +5,4 @@ Simple redwood application that serves as a contact form with client side and se
 Added functionality:
 
 - Dashboard to view all contact requests
+- Seperate pages to view each individual contact request

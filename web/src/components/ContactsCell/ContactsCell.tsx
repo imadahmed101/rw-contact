@@ -1,6 +1,7 @@
 import type { ContactsQuery } from 'types/graphql'
 
 import type { CellSuccessProps, CellFailureProps } from '@redwoodjs/web'
+import { Link, routes } from '@redwoodjs/router'
 
 export const QUERY = gql`
   query ContactsQuery {
@@ -26,10 +27,14 @@ export const Failure = ({ error }: CellFailureProps) => (
 export const Success = ({ contacts }: CellSuccessProps<ContactsQuery>) => {
   return (
     <>
-      {contacts.map((contact) =>(
+      {contacts.map((contact) => (
         <article key={contact.id} className='mt-8'>
           <header>
-            <h2 className='text-lg font-bold'>{contact.name}</h2>
+            <h2 className='text-lg font-bold'>
+              <Link to={routes.contactIndividual({id: contact.id})}>
+                {contact.name}
+              </Link>
+            </h2>
           </header>
           <span className='bg-gray-800 text-white px-2 rounded-full'>{contact.courses}</span>
           <p>{contact.comment}</p>
@@ -37,7 +42,7 @@ export const Success = ({ contacts }: CellSuccessProps<ContactsQuery>) => {
           <p className='text-gray-600 text-sm'>Posted at: {contact.createdAt}</p>
         </article>
       )
-       )}
+      )}
     </>
   )
 }
