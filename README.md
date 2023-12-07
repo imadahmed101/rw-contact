@@ -6,3 +6,4 @@ Added functionality:
 
 - Dashboard to view all contact requests
 - Seperate pages to view each individual contact request
+- Authentication (Login and Register users, dashboard and contact requests only viewable while logged in)
