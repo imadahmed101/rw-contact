@@ -23,7 +23,9 @@ const Routes = () => {
         <PrivateSet unauthenticated='home'>
           <Route path="/dashboard" page={DashboardPage} name="dashboard" />
           <Route path="/contact/{id:Int}" page={ContactIndividualPage} name="contactIndividual" />
+      <Route path="/form-builder" page={FormBuilderPage} name="formBuilder" />
         </PrivateSet>
+      <Route path="/docs" page={DocsPage} name="docs" />
         <Route path="/contact" page={ContactPage} name="contact" />
         <Route path="/" page={HomePage} name="home" />
         <Route notfound page={NotFoundPage} />

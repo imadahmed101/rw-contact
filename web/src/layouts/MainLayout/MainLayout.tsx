@@ -24,9 +24,11 @@ const MainLayout = ({ children }: MainLayoutProps) => {
       <nav>
         {isAuthenticated ? (
           <div className="flex flex-row gap-2">
-            <Link to={routes.home()} className="border-b-[1px] border-transparent hover:border-black">Home</Link>
+            {/* <Link to={routes.home()} className="border-b-[1px] border-transparent hover:border-black">Home</Link> */}
             <Link to={routes.contact()} className="border-b-[1px] border-transparent hover:border-black">Contact</Link>
             <Link to={routes.dashboard()} className="border-b-[1px] border-transparent hover:border-black">Dashboard</Link>
+            <Link to={routes.formBuilder()} className="border-b-[1px] border-transparent hover:border-black">Form Builder</Link>
+            <Link to={routes.docs()} className="border-b-[1px] border-transparent hover:border-black">Docs</Link>
             <button type="button" onClick={clickLogOut} className="border-b-[1px] border-transparent hover:border-black">Logout</button>
             <span className="bg-gray-600 text-white rounded-md px-1">Logged in as: {currentUser.name}{' '}</span>
           </div>
@@ -34,7 +36,7 @@ const MainLayout = ({ children }: MainLayoutProps) => {
           : (
             <div className="flex flex-row gap-2">
 
-        <Link to={routes.home()} className="border-b-[1px] border-transparent hover:border-black">Home</Link>
+        {/* <Link to={routes.home()} className="border-b-[1px] border-transparent hover:border-black">Home</Link> */}
         <Link to={routes.login()} className="border-b-[1px] border-transparent hover:border-black">Login</Link>
             <Link to={routes.signup()} className="border-b-[1px] border-transparent hover:border-black">Register</Link>
             </div>
@@ -66,6 +68,8 @@ const MainLayout = ({ children }: MainLayoutProps) => {
             <Link to={routes.home()} onClick={() => setOpen(false)} className="p-2 hover:bg-gray-800">Home</Link>
             <Link to={routes.contact()} onClick={() => setOpen(false)} className="p-2 hover:bg-gray-800">Contact</Link>
             <Link to={routes.dashboard()} onClick={() => setOpen(false)} className="p-2 hover:bg-gray-800">Dashboard</Link>
+            <Link to={routes.formBuilder()} onClick={() => setOpen(false)} className="p-2 hover:bg-gray-800">Form Builder</Link>
+            <Link to={routes.docs()} onClick={() => setOpen(false)} className="p-2 hover:bg-gray-800">Docs</Link>
             <button type="button" onClick={clickLogOut} className="p-2 hover:bg-gray-800 text-left">Logout</button>
           </div>
         )

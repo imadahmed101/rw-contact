@@ -72,7 +72,7 @@ const HomePage = () => {
             <div className='flex-1 mx-2'>
               <div className='max-w-[600px]'>
                 <h3 className='text-2xl font-semibold'>Contact Form's Simplified</h3>
-                <p className='text-xl text-gray-700'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime dolore molestias, facere hic ducimus laudantium excepturi accusantium aliquid et necessitatibus! Porro commodi iure aliquid veritatis officia, sit tenetur molestiae adipisci?</p>
+                <p className='text-xl text-gray-700'>Ask the right questions, get the right answers. Using our form builder you can create customized forms to your liking.</p>
               </div>
             </div>
           </div>
@@ -81,7 +81,7 @@ const HomePage = () => {
             <div className='flex-1 mx-2'>
               <div className='max-w-[600px]'>
                 <h3 className='text-2xl font-semibold'>Secure Admin Dashboard</h3>
-                <p className='text-xl text-gray-700'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime dolore molestias, facere hic ducimus laudantium excepturi accusantium aliquid et necessitatibus! Porro commodi iure aliquid veritatis officia, sit tenetur molestiae adipisci?</p>
+                <p className='text-xl text-gray-700'>Manage your forms and submissions all in one place. Keep track of all your leads in your dashboard and update them as you go.</p>
               </div>
             </div>
             <div className='flex-1'>
@@ -97,7 +97,7 @@ const HomePage = () => {
             <div className='flex-1 mx-2'>
               <div className='max-w-[600px]'>
                 <h3 className='text-2xl font-semibold'>Automatic Email Setup</h3>
-                <p className='text-xl text-gray-700'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime dolore molestias, facere hic ducimus laudantium excepturi accusantium aliquid et necessitatibus! Porro commodi iure aliquid veritatis officia, sit tenetur molestiae adipisci?</p>
+                <p className='text-xl text-gray-700'>Setup your account to automatically email you anytime someone fills out your forms. Also you can setup auto reply to let your users know that you have received their submissions along with any next steps for them.</p>
               </div>
             </div>
           </div>
@@ -177,7 +177,10 @@ const HomePage = () => {
       </div> */}
 
       <div className='bg-black text-white py-32 text-center'>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat suscipit eum voluptate recusandae ducimus molestias alias rerum sit culpa reiciendis dolore animi quis ullam ea, veritatis repellat quam itaque ab.</p>
+      {/* <p className='text-4xl font-semibold'><span className='shadow-inner shadow-white'>Getting feedback from your userbase has never been easier!</span></p> */}
+        {/* <p className='text-4xl font-semibold'><span className='animate-ping'>Getting feedback from your userbase has never been easier!</span></p> */}
+        {/* <p className='text-4xl font-semibold animate-bounce'>Getting feedback from your userbase has never been easier!</p> */}
+        <p className='text-2xl md:text-4xl font-semibold mx-2'>Getting feedback from your userbase has never been easier!</p>
       </div>
 
       <div className='py-16'>
@@ -191,7 +194,7 @@ const HomePage = () => {
               <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
             </svg>
             <p className='text-xl mb-4'>Beginner</p>
-            <p className='text-4xl mb-4'>$5 <span className='text-sm'>/m</span></p>
+            <p className='text-4xl mb-4'>$0 <span className='text-sm'>/m</span></p>
             <p className='mx-2'>Great for testing out the platform and just getting started.</p>
           </div>
 
@@ -200,7 +203,7 @@ const HomePage = () => {
               <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
             <p className='text-xl mb-4'>Advanced</p>
-            <p className='text-4xl mb-4'>$10 <span className='text-sm'>/m</span></p>
+            <p className='text-4xl mb-4'>$5 <span className='text-sm'>/m</span></p>
             <p className='mx-2'>Great for when you need more options in your forms.</p>
           </div>
 
@@ -209,7 +212,7 @@ const HomePage = () => {
               <path strokeLinecap="round" strokeLinejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
             </svg>
             <p className='text-xl mb-4'>Expert</p>
-            <p className='text-4xl mb-4'>$15 <span className='text-sm'>/m</span></p>
+            <p className='text-4xl mb-4'>$10 <span className='text-sm'>/m</span></p>
             <p className='mx-2'>Great for when you need to build complex forms with multi stages and specific validations.</p>
           </div>
 
